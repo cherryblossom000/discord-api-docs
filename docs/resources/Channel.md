@@ -523,7 +523,7 @@ See [permissions](#DOCS_TOPICS_PERMISSIONS/permissions) for more information abo
 | Field  | Type       | Description                   | Default |
 |--------|------------|-------------------------------|---------|
 | id     | snowflake  | role or user id               |         |
-| type?  | int?       | either 0 (role) or 1 (member) | 0       |
+| type   | int        | either 0 (role) or 1 (member) |         |
 | allow? | string?    | permission bit set            | 0       |
 | deny?  | string?    | permission bit set            | 0       |
 
@@ -1099,7 +1099,7 @@ Edit the channel permission overwrites for a user or role in a channel. Only usa
 |-------|---------|-------------------------------------------------|-----------|
 | allow | string  | the bitwise value of all allowed permissions    | "0"       |
 | deny  | string  | the bitwise value of all disallowed permissions | "0"       |
-| type  | integer | 0 for a role or 1 for a member                  | 0         |
+| type  | integer | 0 for a role or 1 for a member                  |           |
 
 ## Get Channel Invites % GET /channels/{channel.id#DOCS_RESOURCES_CHANNEL/channel-object}/invites
 
